@@ -702,7 +702,7 @@ EDXAPP_ENTERPRISE_COURSE_ENROLLMENT_AUDIT_MODES:
 EDXAPP_ICP_LICENSE: !!null
 
 # Base Cookie Domain to share cookie across edx domains
-EDXAPP_BASE_COOKIE_DOMAIN: "localhost"
+EDXAPP_BASE_COOKIE_DOMAIN: "{{ EDXAPP_LMS_SITE_NAME }}"
 
 #-------- Everything below this line is internal to the role ------------
 
