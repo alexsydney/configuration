@@ -1,0 +1,8 @@
+---
+- name: restart the oauth2_proxy service
+  supervisorctl:
+    name: oauth2_proxy
+    supervisorctl_path: "{{ supervisor_ctl }}"
+    config: "{{ supervisor_cfg }}"
+    state: restarted
+  when: oauth2_proxy_installed is defined
